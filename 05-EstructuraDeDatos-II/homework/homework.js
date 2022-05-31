@@ -20,7 +20,6 @@ LinkedList.prototype.add = function(value) {
     if (!this.head) {
         this.head = newNode
     } else {
-
         let current = this.head
         while (current.next) {
             current = current.next
@@ -54,8 +53,6 @@ LinkedList.prototype.search = function(value) {
                 return current.value
             }
         }
-
-
         current = current.next
     }
     return null
